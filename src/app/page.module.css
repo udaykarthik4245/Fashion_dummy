@@ -1,0 +1,98 @@
+/* ─── Brand pillars ──────────────────────────────────────────────────────────── */
+.pillars {
+  background-color: var(--color-accent-bg);
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pillarNumber {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--color-secondary);
+}
+
+.pillarLine {
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-secondary);
+}
+
+.pillarTitle {
+  font-family: var(--font-sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+.pillarBody {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}
+
+/* ─── CTA banner ─────────────────────────────────────────────────────────────── */
+.cta {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: var(--sp-20) 0;
+}
+
+.ctaInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.ctaEyebrow {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background-color: #fff;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 1rem;
+}
+
+.ctaHeading {
+  font-family: var(--font-sans);
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #fff;
+  line-height: 1.15;
+}
+
+.ctaHeading em {
+  font-style: normal;
+  color: #ffe066;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .pillarsGrid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .ctaInner    { flex-direction: column; align-items: flex-start; }
+}

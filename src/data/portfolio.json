@@ -1,0 +1,146 @@
+{
+  "categories": [
+    "All",
+    "Personal Outfits",
+    "Brand Photography",
+    "Accessories",
+    "Lifestyle"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title": "Golden Hour",
+      "category": "Personal Outfits",
+      "image": "https://picsum.photos/seed/elite-outfit1/600/800",
+      "description": "Warm tones embraced in the golden hour light.",
+      "featured": true,
+      "tags": ["summer", "golden-hour", "editorial"]
+    },
+    {
+      "id": 2,
+      "title": "Monochrome Study",
+      "category": "Personal Outfits",
+      "image": "https://picsum.photos/seed/elite-outfit2/600/750",
+      "description": "The compelling power of a single colour palette.",
+      "featured": true,
+      "tags": ["monochrome", "minimal", "editorial"]
+    },
+    {
+      "id": 3,
+      "title": "Urban Texture",
+      "category": "Brand Photography",
+      "image": "https://picsum.photos/seed/elite-brand1/600/800",
+      "description": "Street textures woven into brand identity.",
+      "featured": true,
+      "tags": ["urban", "brand", "campaign"]
+    },
+    {
+      "id": 4,
+      "title": "Silk & Structure",
+      "category": "Brand Photography",
+      "image": "https://picsum.photos/seed/elite-brand2/600/750",
+      "description": "Fluid silhouettes in precisely structured settings.",
+      "featured": true,
+      "tags": ["silk", "couture", "campaign"]
+    },
+    {
+      "id": 5,
+      "title": "The Detail",
+      "category": "Accessories",
+      "image": "https://picsum.photos/seed/elite-acc1/600/700",
+      "description": "Every great look begins with the right accessories.",
+      "featured": true,
+      "tags": ["accessories", "detail", "jewelry"]
+    },
+    {
+      "id": 6,
+      "title": "Sunday Morning",
+      "category": "Lifestyle",
+      "image": "https://picsum.photos/seed/elite-life1/600/800",
+      "description": "Everyday life, thoughtfully styled.",
+      "featured": true,
+      "tags": ["lifestyle", "casual", "morning"]
+    },
+    {
+      "id": 7,
+      "title": "Denim Stories",
+      "category": "Personal Outfits",
+      "image": "https://picsum.photos/seed/elite-outfit3/600/800",
+      "description": "The enduring language of denim.",
+      "featured": false,
+      "tags": ["denim", "casual", "street-style"]
+    },
+    {
+      "id": 8,
+      "title": "White Space",
+      "category": "Brand Photography",
+      "image": "https://picsum.photos/seed/elite-brand3/600/750",
+      "description": "Minimal backgrounds. Maximum impact.",
+      "featured": false,
+      "tags": ["minimal", "studio", "product"]
+    },
+    {
+      "id": 9,
+      "title": "Layered",
+      "category": "Personal Outfits",
+      "image": "https://picsum.photos/seed/elite-outfit4/600/800",
+      "description": "The art of layering across seasons.",
+      "featured": false,
+      "tags": ["layering", "autumn", "styling"]
+    },
+    {
+      "id": 10,
+      "title": "Heritage Craft",
+      "category": "Accessories",
+      "image": "https://picsum.photos/seed/elite-acc2/600/700",
+      "description": "Handcrafted pieces with stories to tell.",
+      "featured": false,
+      "tags": ["craft", "heritage", "leather"]
+    },
+    {
+      "id": 11,
+      "title": "City Life",
+      "category": "Lifestyle",
+      "image": "https://picsum.photos/seed/elite-life2/600/800",
+      "description": "Finding beauty in the urban everyday.",
+      "featured": false,
+      "tags": ["city", "lifestyle", "urban"]
+    },
+    {
+      "id": 12,
+      "title": "Campaign SS25",
+      "category": "Brand Photography",
+      "image": "https://picsum.photos/seed/elite-brand4/600/750",
+      "description": "Spring / Summer 2025 lookbook campaign.",
+      "featured": false,
+      "tags": ["ss25", "campaign", "lookbook"]
+    },
+    {
+      "id": 13,
+      "title": "Evening Edit",
+      "category": "Personal Outfits",
+      "image": "https://picsum.photos/seed/elite-outfit5/600/800",
+      "description": "After-dark dressing done with intention.",
+      "featured": false,
+      "tags": ["evening", "formal", "editorial"]
+    },
+    {
+      "id": 14,
+      "title": "Texture & Tone",
+      "category": "Accessories",
+      "image": "https://picsum.photos/seed/elite-acc3/600/700",
+      "description": "Material stories told through close-up detail.",
+      "featured": false,
+      "tags": ["texture", "detail", "accessories"]
+    },
+    {
+      "id": 15,
+      "title": "Slow Season",
+      "category": "Lifestyle",
+      "image": "https://picsum.photos/seed/elite-life3/600/800",
+      "description": "The art of slowing down, styled beautifully.",
+      "featured": false,
+      "tags": ["slow-living", "lifestyle", "autumn"]
+    }
+  ]
+}

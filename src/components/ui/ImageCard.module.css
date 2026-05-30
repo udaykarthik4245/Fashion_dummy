@@ -1,0 +1,130 @@
+.card {
+  cursor: pointer;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ─── Image frame ────────────────────────────────────────────────────────────── */
+.frame {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-accent-bg);
+}
+
+/* Aspect ratios by size */
+.sm .frame { aspect-ratio: 3 / 4; }
+.md .frame { aspect-ratio: 4 / 5; }
+.lg .frame { aspect-ratio: 3 / 4; }
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform var(--t-slow);
+}
+
+.card:hover .img { transform: scale(1.06); }
+
+/* ─── Hover overlay ──────────────────────────────────────────────────────────── */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(28, 28, 28, 0.85) 0%,
+    rgba(28, 28, 28, 0.35) 45%,
+    transparent            75%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 1.25rem;
+  opacity: 0;
+  transition: opacity var(--t-base);
+}
+
+.card:hover .overlay { opacity: 1; }
+
+.overlayBody {
+  color: #fff;
+  transform: translateY(8px);
+  transition: transform var(--t-base);
+}
+
+.card:hover .overlayBody { transform: translateY(0); }
+
+.overlayCat {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: var(--color-primary);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-pill);
+  margin-bottom: 0.55rem;
+}
+
+.overlayTitle {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.overlayDesc {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,.78);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.viewCta {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1.5px solid #fff;
+  padding-bottom: 2px;
+}
+
+/* ─── Below-card meta ────────────────────────────────────────────────────────── */
+.meta {
+  padding: 0.85rem 1rem 1rem;
+}
+
+.metaCat {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.3rem;
+}
+
+.metaTitle {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+/* ─── Mobile: always show overlay (no hover) ─────────────────────────────────── */
+@media (max-width: 640px) {
+  .overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(28,28,28,.7) 0%, transparent 55%);
+  }
+  .overlayBody  { transform: translateY(0); }
+  .overlayDesc  { display: none; }
+}

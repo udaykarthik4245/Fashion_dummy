@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($paths = @\\(\"C:\\\\Program Files\\\\Git\\\\cmd\\\\git.exe\", \"C:\\\\Program Files \\(x86\\)\\\\Git\\\\cmd\\\\git.exe\", \"$env:LOCALAPPDATA\\\\Programs\\\\Git\\\\cmd\\\\git.exe\", \"$env:USERPROFILE\\\\AppData\\\\Local\\\\Programs\\\\Git\\\\cmd\\\\git.exe\"\\); foreach \\($p in $paths\\) { if \\(Test-Path $p\\) { Write-Output \"FOUND: $p\" } })",
+      "PowerShell($env:Path = \"C:\\\\Program Files\\\\Git\\\\cmd;$env:Path\"; git --version; if \\(Test-Path .git\\) { Write-Output \"REPO_EXISTS\" } else { Write-Output \"NO_REPO\" }; if \\(Test-Path .gitignore\\) { Write-Output \"GITIGNORE_EXISTS\" } else { Write-Output \"NO_GITIGNORE\" })",
+      "PowerShell($env:Path = \"C:\\\\Program Files\\\\Git\\\\cmd;$env:Path\"; git config --global user.name; git config --global user.email)"
+    ]
+  }
+}
