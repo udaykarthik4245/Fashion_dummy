@@ -32,7 +32,7 @@ export default function Header() {
           <div className="w-8 h-8 rounded-lg bg-meesho flex items-center justify-center text-white font-bold">
             M
           </div>
-          <span className="text-xl font-bold text-meesho hidden sm:block">Meesho</span>
+          <span className="text-xl font-bold text-meesho hidden sm:block">ShopFree</span>
         </Link>
 
         <div className="flex-1 max-w-2xl">
